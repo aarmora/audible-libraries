@@ -1,0 +1,21 @@
+{
+  "name": "audible-libraries-back",
+  "version": "1.0.0",
+  "description": "Get live audible libraries.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node lib/index.js"
+  },
+  "author": "Jordan Hansen",
+  "license": "MIT",
+  "dependencies": {
+    "audible-api": "^0.2.5",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
