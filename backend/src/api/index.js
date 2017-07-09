@@ -1,8 +1,10 @@
 import Express from 'express';
+import cors from 'cors';
 import { initializeMongo } from '../data/mongo.connection';
 import { getAll } from '../data/actions';
 
-const app = Express();
+const app = Express().use(cors());
+app.options('*', cors());
 const port = 3022;
 
 initializeMongo((db) => {

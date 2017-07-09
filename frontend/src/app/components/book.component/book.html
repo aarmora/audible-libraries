@@ -1,0 +1,9 @@
+<md-card (click)='goToUrl(book.url)' class="book-card">
+  <md-card-header>
+    <md-card-title>{{book.title}}</md-card-title>
+  </md-card-header>
+  <img md-card-image src="{{book.imageUrl}}">
+  <md-card-content>
+    Library owner: <b>{{book.owner}}</b>
+  </md-card-content>
+</md-card>

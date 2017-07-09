@@ -1,0 +1,10 @@
+.book-card {
+  width: 220px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 35px;
+}
+
+.book-header-image {
+  background-size: cover;
+}
