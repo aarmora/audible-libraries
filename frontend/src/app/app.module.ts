@@ -7,9 +7,12 @@ import { routing } from './app.routes';
 
 import { MaterialModule } from '@angular/material';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BookComponent } from './components';
-import { AppComponent, MyFilterPipe } from './app.component';
+import { AppComponent } from './app.component';
+
+import { FilterPipe } from './pipes'
 
 import { BookService } from './services';
 
@@ -17,9 +20,10 @@ import { BookService } from './services';
   declarations: [
     AppComponent,
     BookComponent,
-    MyFilterPipe
+    FilterPipe
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     MaterialModule,
     HttpModule,

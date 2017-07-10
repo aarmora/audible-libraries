@@ -1,7 +1,10 @@
-<md-input-container>
-  <input mdInput placeholder="Search" [(ngModel)]="filter" >
-</md-input-container>
-{{filter}}
-<ng-container *ngFor="let book of books">
-  <book [book]="book"></book>
+<div class="filter">
+  <md-input-container>
+    <input mdInput placeholder="Search" [(ngModel)]="filterText">
+  </md-input-container>
+</div>
+<ng-container *ngIf="books">
+  <ng-container *ngFor="let book of books | filter:filterText">
+    <book [book]="book"></book>
+  </ng-container>
 </ng-container>
