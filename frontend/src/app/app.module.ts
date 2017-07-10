@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookComponent } from './components';
 import { AppComponent } from './app.component';
 
-import { FilterPipe } from './pipes'
+import { FilterPipe, SortPipe } from './pipes'
 
 import { BookService } from './services';
 
@@ -20,7 +20,8 @@ import { BookService } from './services';
   declarations: [
     AppComponent,
     BookComponent,
-    FilterPipe
+    FilterPipe,
+    SortPipe
   ],
   imports: [
     BrowserAnimationsModule,

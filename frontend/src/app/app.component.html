@@ -4,7 +4,7 @@
   </md-input-container>
 </div>
 <ng-container *ngIf="books">
-  <ng-container *ngFor="let book of books | filter:filterText">
+  <ng-container *ngFor="let book of books | filter:filterText | sort:'title'">
     <book [book]="book"></book>
   </ng-container>
 </ng-container>
