@@ -13,8 +13,18 @@ import { IBook } from './../../models/book';
 
 export class BookComponent {
     @Input() public book: IBook;
+    public obfuscate = true;
 
     public goToUrl(url: string) {
         window.open(url);
+    }
+
+    public bookOwner() {
+        if (this.obfuscate) {
+            return "**********";
+        }
+        else {
+            return this.book.owner;
+        }
     }
 }

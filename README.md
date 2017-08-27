@@ -24,6 +24,10 @@ You'll need a config.js in the root of your backend, as a sibling of `package.js
 
     module.exports = config;
 
+## Seeding Data
+
+Since there currently is no API, I built a [script](https://gist.github.com/aarmora/ce4d24f0b28e0c9a187214ece948625a) that can be used to get the audible books if you use it in the developer tools console. It will create a json object that you can then use function in `custom.js` to more or less reference your json file and insert them all into the database.
+
 ## License
 
 MIT license.

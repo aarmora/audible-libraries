@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
-    "start": "node lib/index.js"
+    "start": "npm run build && node lib/api/index.js"
   },
   "author": "Jordan Hansen",
   "license": "MIT",
