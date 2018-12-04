@@ -1,0 +1,21 @@
+{
+  "name": "audible-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes the audible libraries and compiles into one pack of data.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js"
+  },
+  "author": "Jordan Hansen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/puppeteer": "^1.6.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "database-helpers": "^2.0.1",
+    "puppeteer": "^1.7.0",
+    "puppeteer-helpers": "1.0.8",
+    "webhook-discord": "^2.3.0"
+  }
+}
